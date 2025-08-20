@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--TAG Q HABILITA O SITE SER ABERTO EM DIFERENTES APARELHOS--> 
     <meta name="author" content="Cauhê">
     <meta name="description" content="Site com o proposito de explicar o HTML como ao todo">
-    <title>site de compras</title>
-    <link rel="shortcut icon" href="Captura de tela 2025-08-13 162711.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-
+      <title>site de compras</title>
+      <link rel="shortcut icon" href="../imagens/Captura de tela 2025-08-13 162711.png" type="image/x-icon">
+      <link rel="stylesheet" href="../estilizacoes/style.css">
+ 
 </head>
 <body>
 
-    <h1><!--titulo principal, só pode ser chamado 1 vez--> 
-     Tela principal
-    </h1>
+    <h1>Tela principal</h1><!--titulo principal, só pode ser chamado 1 vez--> 
 
     <header id="cabecalho">
-     <img src="Captura de tela 2025-08-13 162711.png" alt="logo do site" >
+     <img src="../imagens/Captura de tela 2025-08-13 162711.png" alt="logo do site" >
     
      <nav>
          
@@ -35,39 +33,50 @@
 
         <h2>bixo guloso</h2>
 
-        <!--card do produto--> 
-        <div>
-        <img src="gif (1).gif" alt="bixo guloso" id="imagemdoproduto">
-        <h3>Echo shop</h3>
-        <span>340,00</span>
-        </div>
+     <div id="container-flex-produtos">
 
+        <!--card do produto--> 
+        <article class="card-produto">
+         <img src="../imagens/gif (1).gif" alt="bixo guloso" id="imagemdoproduto">
+         <h3>Echo shop</h3>
+         <span>340,00</span>
+        </article>
+
+        <article class="card-produto">
+            <img src="../imagens/gif (1).gif" alt="bixo guloso" id="imagemdoproduto">
+            <h3>Echo shop</h3>
+            <span>340,00</span>
+        </article>
+
+        <article class="card-produto">
+            <img src="../imagens/gif (1).gif" alt="bixo guloso" id="imagemdoproduto">
+            <h3>Echo shop</h3>
+            <span>340,00</span>
+        </article>   
+
+     </div>
+  
        </section>
       
-       <section>
+       <section id="container-flex-suporte">
        <h2>Suporte do cliente</h2>
       
         <form>
 
             <label for="campo-nome">Nome Completo:</label>
-            <input type="text" placeholder="Digite seu nome completo" id="campo-nome" required>
+            <input type="text" placeholder="  Digite seu nome completo" id="campo-nome" class="nome" required>
 
-            <br/><!--quebra linha-->
 
             <label for="campo-email">E-mail:</label>
-            <input type="email" name="" id="campo-email" placeholder="Digite o E-mail" required>
+            <input type="email" name="" id="campo-email" placeholder="  Digite o E-mail" class="nome" required>
 
-            <br/><!--quebra linha-->
-
+            
             <label for="senha">Senha:</label>
-            <input type="password" name="" id="senha" placeholder="Digite a senha" required>
-
-            <br/><!--quebra linha-->
+            <input type="password" name="" id="senha" placeholder="  Digite a senha" class="nome"  required>
 
             <label for="uoload">Upload de arquivo:</label>
-            <input type="file" name="" id="upload">
+            <input type="file" name="" id="upload" class="nome">
 
-            <br/><!--quebra linha-->
 
             <label for="">Estado:</label>
             <select name="" id="selecionar">
@@ -79,30 +88,26 @@
 
             </select>
 
-            <br/><!--quebra linha-->
 
-            <input type="checkbox" name="" id="">
+            <input class="nome" type="checkbox" name="" id="" class="nome">
             <label for="">Li e acordo com os termos.</label>
 
-            <br/><!--quebra linha-->
 
             <label for="">Seleciona seu gênero</label>
-            <input type="radio" name="" id="" value="Feminino">
+            <input type="radio" name="" id="" value="Feminino" class="nome">
             <label for="">Feminino</label>
-            <input type="radio" name="" id="" value="Masculino">
+            <input type="radio" name="" id="" value="Masculino" class="nome">
             <label for="">Masculino</label>
-            <input type="radio" name="" id="" value="Microondas da Mutilaser">
+            <input type="radio" name="" id="" value="Microondas da Mutilaser" class="nome">
             <Label>Microondas da Mutilaser</Label>
 
-            <br/><!--quebra linha-->
 
             <label for="">Descrição:</label>
             <textarea name="" id="" required></textarea>
 
-            <br/><!--quebra linha-->
 
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
+            <button type="submit" class="botao">Enviar</button>
+            <button type="reset" class="botao">Limpar</button>
 
         </form>
 
